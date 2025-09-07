@@ -32,7 +32,7 @@ Recommended: Python 3.12+
 # Transcription File Format
 All transcription files in the "transcription" folder must follow this format.
 ```json
-// Example: 7529497187273739542.json, Note: The file name is using the video ID: {VideoID}.json Credit: The creator is @maya.mental.fitness, https://www.tiktok.com/@maya.mental.fitness/video/7529497187273739542
+// Note: This line isn't in the file. Example: 7529497187273739542.json, the file name uses the video id, ("{Video_id}.json"). Credit: The creator is @maya.mental.fitness, https://www.tiktok.com/@maya.mental.fitness/video/7529497187273739542 
 [
     {
         "start": 0.64,
