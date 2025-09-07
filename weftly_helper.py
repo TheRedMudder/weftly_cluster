@@ -90,7 +90,7 @@ def read_all_transcriptions(
             else:
                 skipped.append(t_file_path.stem)
     if len(skipped) > 0:
-        logging.warning("Skipping Videos: %s", skipped)
+        logging.warning("Skipping %s videos", len(skipped))
     return messages, ids, skipped
 
 
@@ -287,6 +287,7 @@ def reduce_dimensionality(embs, n_neighbors, random_state):
         n_components=50,
         metric="cosine",
         random_state=random_state,
+        n_jobs=1
     )
     x50 = reducer50.fit_transform(embs)
     reducer2 = UMAP(
@@ -294,6 +295,7 @@ def reduce_dimensionality(embs, n_neighbors, random_state):
         n_components=2,
         metric="cosine",
         random_state=random_state,
+        n_jobs=1
     )
     x2 = reducer2.fit_transform(embs)
     return x50, x2
