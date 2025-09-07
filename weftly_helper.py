@@ -156,7 +156,7 @@ def vectorize_text(
     # perform model (messages->vectors) with/without ollama
     if selected_model == ModelOptions.OLLAMA_FULL:
         # use ollama
-        emb = run_ollama_emb(messages, str(selected_model), True)
+        emb = run_ollama_emb(texts=messages, model_name=str(selected_model), progress=True)
     else:
         # vectorize without ollama
         model = SentenceTransformer(str(selected_model))
@@ -172,7 +172,7 @@ def vectorize_text(
     return emb, ids
 
 
-def run_ollama_emb(texts, model_name="bge-m3", batch_size=16, progress=False):
+def run_ollama_emb(texts, model_name="bge-m3", progress=False, batch_size=16,):
     """run ollama embedding model
 
     Parameters
