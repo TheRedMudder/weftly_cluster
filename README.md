@@ -21,7 +21,7 @@ This repo is built to run locally, with **no cloud required**. You can start wit
     2. `python cluster_engine.py`
 
 ## Post
-- [High level overview]()
+- [High level overview](https://open.substack.com/pub/shakabook/p/interest-maps-deep-dive-into-tiktok)
 
 # Contributing
 Issues and PRs are welcome! 
