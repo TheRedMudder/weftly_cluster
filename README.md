@@ -121,3 +121,8 @@ All transcription files in the "transcription" folder must follow this format.
     }
 ]
 ```
+
+# Future
+- Add `pyproject.toml`
+- Add '`argparse`
+- Include umap_x, umap_y in CSV

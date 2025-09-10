@@ -53,7 +53,7 @@ def test_cluster(selected_model, output_file):
             "cluster_id": cluster_ids,
             "membership_prob": probs,
             "transcription": messages,
-            "path_to_video": [f"{config["video_dir"]}/{id}.mp4" for id in ids],
+            "path_to_video": [f'{config["video_dir"]}/{id}.mp4' for id in ids],
         }
     )
     # save clusters
